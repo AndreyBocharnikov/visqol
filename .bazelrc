@@ -51,7 +51,7 @@ build -c opt
 # TF's .bazelrc claims it c++14 required, but it is likely required
 # in the sense that it is backwards compatible with c++17.
 build --cxxopt=-std=c++17
-build --linkopt=-ldl
+build --linkopt=-lstdc++fs
 build --host_cxxopt=-std=c++17
 
 build --experimental_repo_remote_exec
